@@ -1,0 +1,30 @@
+<div class="character-filter">
+    <h2>Filter Characters</h2>
+    <form (ngSubmit)="applyFilter()">
+      <div>
+        <label for="film">Film:</label>
+        <select id="film" [(ngModel)]="selectedFilm" name="film">
+          <option value="">All Films</option>
+          <option *ngFor="let film of films" [value]="film.url">{{ film.title }}</option>
+        </select>
+      </div>
+  
+      <div>
+        <label for="species">Species:</label>
+        <select id="species" [(ngModel)]="selectedSpecies" name="species">
+          <option value="">All Species</option>
+          <option *ngFor="let spec of species" [value]="spec.url">{{ spec.name }}</option>
+        </select>
+      </div>
+  
+      <div>
+        <label for="startYear">Birth Year Start:</label>
+        <input type="number" id="startYear" [(ngModel)]="birthYearRange.start" name="startYear">
+        <label for="endYear">Birth Year End:</label>
+        <input type="number" id="endYear" [(ngModel)]="birthYearRange.end" name="endYear">
+      </div>
+  
+      <button type="submit">Apply Filter</button>
+    </form>
+  </div>
+  

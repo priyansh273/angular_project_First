@@ -1,0 +1,9 @@
+<div class="character-list">
+    <h2>Star Wars Characters</h2>
+    <ul>
+      <li *ngFor="let character of characters">
+        <a [routerLink]="['/character', character.url.split('/')[5]]">{{ character.name }}</a>
+      </li>
+    </ul>
+  </div>
+  

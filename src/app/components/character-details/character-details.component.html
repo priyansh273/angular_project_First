@@ -1,0 +1,8 @@
+<div class="character-details" *ngIf="character">
+    <h2>{{ character.name }}</h2>
+    <p><strong>Birth Year:</strong> {{ character.birth_year }}</p>
+    <p><strong>Films:</strong> {{ character.films.join(', ') }}</p>
+    <p><strong>Species:</strong> {{ character.species.join(', ') }}</p>
+    <p><strong>Starships:</strong> {{ character.starships.join(', ') }}</p>
+  </div>
+  

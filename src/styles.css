@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+/* Add your global styles here */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .character-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .character-list li {
+    margin: 5px 0;
+  }
+  
+  .character-list a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .character-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .character-filter form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .character-filter div {
+    margin: 10px 0;
+  }
+  

@@ -3,8 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'star-wars-app';
+  onFilterChanged(filter: any) {
+    // Handle filter changes here, maybe pass to a service or use a state management solution
+  }
 }
